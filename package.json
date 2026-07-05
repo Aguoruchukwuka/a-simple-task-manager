@@ -1,0 +1,17 @@
+{
+  "name": "stitch-design-animenia",
+  "version": "1.0.0",
+  "description": "A simple task manager web app with clean UI/UX",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "http-server public -p 8080",
+    "dev": "live-server public --port=8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  }
+}
