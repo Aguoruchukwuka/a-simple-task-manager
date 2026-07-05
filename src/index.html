@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Task Manager</h1>
-            <p>Stay organized, stay productive</p>
 
 ```
+<header>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <p>Stay organized, stay productive</p>
+
         <button id="dark-mode-toggle">
             🌙 Dark Mode
         </button>
@@ -62,22 +63,28 @@
                 placeholder="Search tasks..."
             >
 
-            <button id="filter-all">All</button>
-            <button id="filter-active">Active</button>
-            <button id="filter-completed">Completed</button>
+            <button type="button" id="filter-all">
+                All
+            </button>
 
-            <button id="export-btn">
+            <button type="button" id="filter-active">
+                Active
+            </button>
+
+            <button type="button" id="filter-completed">
+                Completed
+            </button>
+
+            <button type="button" id="export-btn">
                 Export Tasks
             </button>
 
         </div>
 
         <div class="task-summary">
-
             <span id="task-count">
                 0 Tasks
             </span>
-
         </div>
 
         <ul id="todo-list"></ul>
@@ -90,14 +97,13 @@
         <p>
             &copy;
             <span id="year"></span>
-            Stitch Design Animenia.
-            All rights reserved.
+            Stitch Design Animenia. All rights reserved.
         </p>
     </div>
 </footer>
 
 <script src="main.js"></script>
-```
+
 
 </body>
 </html>
