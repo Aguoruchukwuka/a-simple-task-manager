@@ -1,34 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stitch Design Animenia - Task Manager</title>
     <link rel="stylesheet" href="styles/style.css">
-<script src="main.js"></script>
-    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Task Manager</h1>
             <p>Stay organized, stay productive</p>
+
+```
+        <button id="dark-mode-toggle">
+            🌙 Dark Mode
+        </button>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+
+        <form id="todo-form">
+
+            <input
+                type="text"
+                id="todo-input"
+                placeholder="What needs to be done?"
+                autocomplete="off"
+                required
+            >
+
+            <select id="priority">
+                <option value="Low">Low Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="High">High Priority</option>
+            </select>
+
+            <input type="date" id="due-date">
+
+            <select id="category">
+                <option value="Personal">Personal</option>
+                <option value="School">School</option>
+                <option value="Work">Work</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button type="submit">
+                Add Task
+            </button>
+
+        </form>
+
+        <div class="toolbar">
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search tasks..."
+            >
+
+            <button id="filter-all">All</button>
+            <button id="filter-active">Active</button>
+            <button id="filter-completed">Completed</button>
+
+            <button id="export-btn">
+                Export Tasks
+            </button>
+
         </div>
-    </header>
-    <main>
-        <div class="container">
-            <form id="todo-form">
-                <input type="text" id="todo-input" placeholder="What needs to be done?" autocomplete="off" required>
-                <button type="submit">Add Task</button>
-            </form>
-            <ul id="todo-list"></ul>
+
+        <div class="task-summary">
+
+            <span id="task-count">
+                0 Tasks
+            </span>
+
         </div>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="year"></span> Stitch Design Animenia. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="../src/main.js"></script>
+
+        <ul id="todo-list"></ul>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>
+            &copy;
+            <span id="year"></span>
+            Stitch Design Animenia.
+            All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+```
+
 </body>
 </html>
